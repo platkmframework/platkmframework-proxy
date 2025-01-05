@@ -2,39 +2,70 @@ package org.platkmframework.proxy;
 
 import org.platkmframework.annotation.TruslyException;
 
+/**
+ *   Author:
+ *     Eduardo Iglesias
+ *   Contributors:
+ *   	Eduardo Iglesias - initial API and implementation
+ */
 @TruslyException
 public class ProxyProcesorException extends RuntimeException {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 4773925953900658939L;
-	
-	private int status = -1;
+    /**
+     */
+    private static final long serialVersionUID = 4773925953900658939L;
 
-	public ProxyProcesorException() {
-		super();
-	}
+    /**
+     * Atributo status
+     */
+    private int status = -1;
 
-	public ProxyProcesorException(String message) {
-		super(message);
-	}
-	
-	public ProxyProcesorException(int status, String message) {
-		super(message);
-		this.status = status;
-	}
+    /**
+     * Constructor ProxyProcesorException
+     */
+    public ProxyProcesorException() {
+        super();
+    }
 
-	public ProxyProcesorException(Throwable cause) {
-		super(cause);
-	}
+    /**
+     * Constructor ProxyProcesorException
+     * @param message message
+     */
+    public ProxyProcesorException(String message) {
+        super(message);
+    }
 
-	public int getStatus() {
-		return status;
-	}
+    /**
+     * Constructor ProxyProcesorException
+     * @param status status
+     * @param message message
+     */
+    public ProxyProcesorException(int status, String message) {
+        super(message);
+        this.status = status;
+    }
 
-	public void setStatus(int status) {
-		this.status = status;
-	}
+    /**
+     * Constructor ProxyProcesorException
+     * @param cause cause
+     */
+    public ProxyProcesorException(Throwable cause) {
+        super(cause);
+    }
 
+    /**
+     * getStatus
+     * @return int
+     */
+    public int getStatus() {
+        return status;
+    }
+
+    /**
+     * setStatus
+     * @param status status
+     */
+    public void setStatus(int status) {
+        this.status = status;
+    }
 }
