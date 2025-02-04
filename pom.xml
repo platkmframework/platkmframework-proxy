@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.platkmframework</groupId>
   <artifactId>platkmframework-proxy</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   
 
 	<name>org.platkmframework:platkmframework-proxy</name>
@@ -100,7 +100,7 @@
 	<dependency>
 	  <groupId>org.platkmframework</groupId>
 	  <artifactId>platkmframework-annotation</artifactId>
-	  <version>1.0.0</version>
+	  <version>1.1.0</version>
 	</dependency>	  
   </dependencies>  
   
